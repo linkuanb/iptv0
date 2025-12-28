@@ -13,9 +13,9 @@ on:
         required: true
         default: 'master'
   
-  # 每24小时自动运行一次
+  # 每天6点自动运行一次
   schedule:
-    - cron: '0 0 */24 * * *'
+    - cron: '0 22 * * *'
 
   # 当仓库有push时也运行
   push:
